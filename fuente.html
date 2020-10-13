@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.column2 {
+  float: right;
+  width: 80%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/asdasda222.jpg);
+	background-size:cover;
+	
+}
+ 
+.principal{
+	float:right;
+	list-style:none;
+	margin-top:30px;
+		
+}
+.principal li{
+	display:inline-block;
+	
+}
+.principal li a menu1 li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+.principal li a menu1 li a:hover{
+	border:2px solid white;
+	}
+	
+.principal li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+
+.principal li a:hover{
+	border:2px solid white;
+}
+	
+.menu1{
+	position:relative;
+	display:inline-block;
+}
+
+.contenido{
+	display:none;
+	position:absolute;
+	background-color:#f9f9f9;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0,2);
+	z-index:1;
+}
+.contenido a{
+	color:#000;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.menu1:hover .contenido{
+	display:block;
+}
+.contenido a:hover{
+	background-color:#f1f1f1;
+}
+.biblioteca{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(imagenes/cssssss.jpg);
+	height:10vh;
+	background-size:auto;
+	background-position:center;
+}
+pre{
+	font-size:16px;
+	}
+	
+	
+</style>
+</head>
+<body>
+
+		<header class="biblioteca">
+	<ul class="principal">
+   		<li><a href="proyect1html.html">Inicio</a></li>
+   		
+   		<li><a href="acercadelcreador.html">Ayuda</a></li>
+        <div class="menu1">
+        <li><a href="">Menu</a></li>
+        <div class="contenido">
+        <a href="tutorial.html">Tutorial</a>
+        <a href="Biblioteca.html">Biblioteca</a>
+        <a href="descargas.html">Ejemplos</a>
+        </div>
+        </div>
+      
+   		</ul>
+ 
+		</header>
+
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+   
+       <h2><a href="selectores.html">CSS selectores</a></h2>
+           <h2>CSS colores</h2>
+           <h2><a href="fondos1.html">CSS fondos</a></h2>
+           <h2><a href="margenes.html">CSS margenes</a></h2>
+           <h2><a href="csstexto.html">CSS texto</a></h2>
+           <h2><a href="fuente.html">CSS fuente para letras</a></h2>
+           <h2><a href="iconos.html">CSS iconos</a></h2>
+           <h2><a href="menus.html">CSS menus</a></h2>
+           <h2><a href="bordes.html">CSS bordes</a></h2>
+           <h2><a href="posicionamiento.html">CSS posicionamiento</a></h2>
+             
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    
+    <pre>
+    Las propiedades de fuente CSS definen la familia de fuentes, la negrita, el tamaño y el estilo de un texto.
+Familias de fuentes CSS
+En CSS, hay dos tipos de nombres de familias de fuentes:
+*generic family un grupo de familias de fuentes con un aspecto similar (como "Serif" o "Monospace")
+* font family  una familia de fuentes específica (como "Times New Roman" o "Arial")
+<table width="200" border="1">
+  <tr>
+    <td>&nbsp;Generic family</td>
+    <td>&nbsp;Font family</td>
+    <td>&nbsp;Descripcion</td>
+  </tr>
+  <tr>
+    <td>&nbsp;Serif</td>
+    <td>&nbsp;Sans-serif</td>
+    <td>&nbsp;Monospace</td>
+  </tr>
+  <tr>
+    <td>&nbsp;	Times New Roman
+Georgia	</td>
+    <td>&nbsp;Arial
+Verdana</td>
+    <td>&nbsp;Courier New
+Lucida Console</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<pre>Las fuentes serif tienen 
+    líneas pequeñas en los extremos de 
+    algunos caracteres.</pre></td>
+    <td>&nbsp;<pre>"Sans" significa sin: estas
+     fuentes no tienen las líneas en los 
+     extremos de los caracteres</pre></td>
+    <td>&nbsp;<pre>Todos los caracteres monoespaciales 
+    tienen el mismo ancho</pre></td>
+  </tr>
+</table>
+Font Family
+La propiedad debe contener varios nombres de fuente como un sistema "alternativo". Si el navegador no admite la primera fuente, prueba la siguiente fuente, y así sucesivamente.
+
+Comience con la fuente que desee y termine con una familia genérica, para permitir que el navegador elija una fuente similar en la familia genérica, si no hay otras fuentes disponibles.
+
+Nota: Si el nombre de una familia de fuentes es más de una palabra, debe estar entre comillas, como: "Times New Roman".
+
+Se especifica más de una familia de fuentes en una lista separada por comas:
+Ejemplo
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+p.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+< / style >
+< / head >
+< body >
+
+< h1 >CSS font-family< / h1 >
+< p class="serif">En este parrafo, esta en fuente Times New Roman.< / p >
+< p class="sansserif">Este parrafo, esta en fuente Arial.< / p >
+
+< / body >
+< / html >
+
+</pre>
+<a href="prubas/fuente1.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+<pre>
+Font Style
+Esta propiedad tiene 3 valores:
+Normal El texto se muestra de manera normal
+Italic el texto se muestra en cursiva
+Oblique El texto esta inclinado(muy parecido a italic, pero menos inclinada)
+Ejemplo
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+< / style >
+< / head >
+< body >
+
+< p class="normal">Esta parrafo esta en estilo normal.< / p >
+< p class="italic">Este parrafo esta en estilo italic.< / p >
+< p class="oblique">Este parrafo esta en oblique.< / p > 
+
+< / body >
+< / html >
+
+</pre>
+<a href="prubas/fuente2.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+<pre>
+Font Size
+
+Poder administrar el tamaño del texto es importante en el diseño web. Sin embargo, no debe usar ajustes de tamaño de fuente para hacer que los párrafos se vean como encabezados o que los encabezados se vean como párrafos.
+
+Utilice siempre las etiquetas HTML adecuadas, como < h1 > - < h6 > para encabezados y < p > para párrafos.
+
+El valor del tamaño de fuente puede ser un tamaño absoluto o relativo.
+Absolute size:
+*Establece el texto en un tamaño especificado
+*No permite que un usuario cambie el tamaño del texto en todos los navegadores (malo por razones de accesibilidad)
+*El tamaño absoluto es útil cuando se conoce el tamaño físico de la salida
+Relative size:
+*Establece el tamaño relativo a los elementos circundantes.
+*Permite a un usuario cambiar el tamaño del texto en los navegadores
+Ejemplo:
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+< / style >
+< / head > 
+< body >
+
+< h1 >Titulo 1< / h1 >
+< h2 >Titulo 2< / h2 >
+< p >Primer parrafo.< / p >
+< p >Segundo parrafo.< / p >
+
+< / body >
+< / html >
+
+</pre>
+<a href="prubas/fuente3.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+    <a class="texto12" href="Biblioteca.html">Volver</a>
+  </div>
+</div>
+<footer>@Fernandez Villarroel Percy Rodrigo®</footer>
+</body>
+</html>

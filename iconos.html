@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: auto; 
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.column2 {
+  float: right;
+  width: 80%;
+  padding: 10px;
+  height: auto; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/asdasda222.jpg);
+	background-size:cover;
+	
+}
+.principal{
+	float:right;
+	list-style:none;
+	margin-top:30px;
+		
+}
+.principal li{
+	display:inline-block;
+	
+}
+.principal li a menu1 li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+.principal li a menu1 li a:hover{
+	border:2px solid white;
+	}
+	
+.principal li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+
+.principal li a:hover{
+	border:2px solid white;
+}
+	
+.menu1{
+	position:relative;
+	display:inline-block;
+}
+
+.contenido{
+	display:none;
+	position:absolute;
+	background-color:#f9f9f9;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0,2);
+	z-index:1;
+}
+.contenido a{
+	color:#000;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.menu1:hover .contenido{
+	display:block;
+}
+.contenido a:hover{
+	background-color:#f1f1f1;
+}
+.biblioteca{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/asdasda222.jpg);
+	height:10vh;
+	background-size:auto;
+	background-position:center;
+}
+pre{
+	font-size:16px;
+	}
+	
+	
+	
+</style>
+</head>
+<body>
+
+		<header class="biblioteca">
+	<ul class="principal">
+   		<li><a href="proyect1html.html">Inicio</a></li>
+   	
+   		<li><a href="acercadelcreador.html">Ayuda</a></li>
+        <div class="menu1">
+        <li><a href="">Menu</a></li>
+        <div class="contenido">
+        <a href="tutorial.html">Tutorial</a>
+        <a href="Biblioteca.html">Biblioteca</a>
+        <a href="">Ejemplos</a>
+        </div>
+        </div>
+      
+   		</ul>
+ 
+		</header>
+
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+   
+       <h2><a href="selectores.html">CSS selectores</a></h2>
+           <h2><a href="fondos1.html">CSS fondos</a></h2>
+           <h2><a href="margenes.html">CSS margenes</a></h2>
+           <h2><a href="csstexto.html">CSS texto</a></h2>
+           <h2><a href="fuente.html">CSS fuente para letras</a></h2>
+           <h2><a href="iconos.html">CSS iconos</a></h2>
+           <h2><a href="menus.html">CSS menus</a></h2>
+           <h2><a href="bordes.html">CSS bordes</a></h2>
+           <h2><a href="posicionamiento.html">CSS posicionamiento</a></h2>
+             
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    <pre>
+    
+    Cómo agregar íconos
+La forma más sencilla de agregar un icono a su página HTML es con una biblioteca de iconos, como Font Awesome.
+
+Agregue el nombre de la clase de icono especificada a cualquier elemento HTML en línea (como <i> o <span>).
+
+Todos los iconos en las bibliotecas de iconos a continuación, son vectores escalables que se pueden personalizar
+ con CSS (tamaño, color, sombra, etc.)
+Iconos impresionantes de fuente
+Para usar los iconos de Font Awesome, agregue la siguiente línea dentro de la sección <head> de su página HTML:
+
+< link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" >
+
+Nota: ¡No se requiere descarga ni instalación!
+Ejemplo
+< !DOCTYPE html >
+< html >
+< head >
+< title >Font Awesome Icons< / title >
+< meta name="vistas" content="width=device-width, initial-scale=1">
+< link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" >
+< / head >
+< body >
+
+< p >Algunos iconos:< / p >
+< i class="fas fa-cloud">< / i >
+< i class="fas fa-heart">< / i >
+< i class="fas fa-car">< / i >
+< i class="fas fa-file">< / i >
+< i class="fas fa-bars">< / i >
+
+< p >Los iconos con cambios de tamaño y color:< / p >
+< i class="fas fa-cloud" style="font-size:24px;" >< / i >
+< i class="fas fa-cloud" style="font-size:36px;" >< /i >
+< i class="fas fa-cloud" style="font-size:48px;color:red;"> < / i >
+< i class="fas fa-cloud" style="font-size:60px;color:lightblue;">< / i >
+
+< / body >
+< / html >
+</pre>
+ <a href="prubas/iconos.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+ <p><a href="Biblioteca.html">Volver</a></p>
+ <footer>@Fernandez Villarroel Percy Rodrigo®</footer>
+</body>
+
+</html>

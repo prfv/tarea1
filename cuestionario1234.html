@@ -1,0 +1,223 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  float: right;
+  width: 80%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/asdasda222.jpg);
+	background-size:cover;
+	
+}
+.principal{
+	float:right;
+	list-style:none;
+	margin-top:30px;
+		
+}
+.principal li{
+	display:inline-block;
+	
+}
+.principal li a menu1 li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+.principal li a menu1 li a:hover{
+	border:2px solid white;
+	}
+	
+.principal li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+
+.principal li a:hover{
+	border:2px solid white;
+}
+	
+.menu1{
+	position:relative;
+	display:inline-block;
+}
+
+.contenido{
+	display:none;
+	position:absolute;
+	background-color:#f9f9f9;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0,2);
+	z-index:1;
+}
+.contenido a{
+	color:#000;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.menu1:hover .contenido{
+	display:block;
+}
+.contenido a:hover{
+	background-color:#f1f1f1;
+}
+.biblioteca{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/asdasda222.jpg);
+	height:10vh;
+	background-size:auto;
+	background-position:center;
+}
+pre{
+	font-size:16px;
+	}
+	
+	
+	
+</style>	
+       
+    </head>
+    <body>
+
+		<header class="biblioteca">
+	<ul class="principal">
+   		<li><a href="proyect1html.html">Inicio</a></li>
+   	
+   		<li><a href="acercadelcreador.html">Ayuda</a></li>
+        <div class="menu1">
+        <li><a href="">Menu</a></li>
+        <div class="contenido">
+        <a href="tutorial.html">Tutorial</a>
+        <a href="Biblioteca.html">Biblioteca</a>
+        <a href="">Ejemplos</a>
+        </div>
+        </div>
+      
+   		</ul>
+ 
+		</header>
+
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+   
+       <h2><a href="selectores.html">CSS selectores</a></h2>
+           <h2>CSS colores</h2>
+           <h2><a href="fondos1.html">CSS fondos</a></h2>
+           <h2><a href="margenes.html">CSS margenes</a></h2>
+           <h2><a href="csstexto.html">CSS texto</a></h2>
+           <h2><a href="fuente.html">CSS fuente para letras</a></h2>
+           <h2><a href="iconos.html">CSS iconos</a></h2>
+           <h2><a href="menus.html">CSS menus</a></h2>
+           <h2><a href="bordes.html">CSS bordes</a></h2>
+           <h2><a href="posicionamiento.html">CSS posicionamiento</a></h2>
+             
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    
+    <pre>
+<script>
+		
+		document.write("<p>"+"LAS RESPUESTAS CORRECTAS ERAN:"+"<p>");
+          var u= window.localStorage.getItem('r1');
+		  if(u=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 1"+"<p>");
+			  }else{
+			document.write("respuesta 1:"+u+"<p>");
+			  }
+			 var u1= window.localStorage.getItem('r2');
+			   if(u1=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 2"+"<p>");
+			  }else{
+			document.write("respuesta 2:"+u1+"<p>");
+			  }
+			 var u2= window.localStorage.getItem('r3');
+			 	   if(u2=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 3"+"<p>");
+			  }else{
+			document.write("respuesta 3:"+u2+"<p>");
+			  }
+			 var u3= window.localStorage.getItem('r4');
+			 	   if(u3=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 4"+"<p>");
+			  }else{
+			document.write("respuesta 4:"+u3+"<p>");
+			  }
+			 var u4= window.localStorage.getItem('r5');
+			 	   if(u4=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 5"+"<p>");
+			  }else{
+			document.write("respuesta 5:"+u4+"<p>");
+			  }
+			 var u5= window.localStorage.getItem('r6');
+			 	   if(u5=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 6"+"<p>");
+			  }else{
+			document.write("respuesta 6:"+u5+"<p>");
+			  }
+			 var u6= window.localStorage.getItem('r7');
+			 	   if(u6=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 7"+"<p>");
+			  }else{
+			document.write("respuesta 7:"+u6+"<p>");
+			  }
+			 var u7= window.localStorage.getItem('r8');
+			 	   if(u7=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 8"+"<p>");
+			  }else{
+			document.write("respuesta 8:"+u7+"<p>");
+			  }
+			 var u8= window.localStorage.getItem('r9');
+			 	   if(u8=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 9"+"<p>");
+			  }else{
+			document.write("respuesta 9:"+u8+"<p>");
+			  }
+			 var u9= window.localStorage.getItem('r10');
+			 	   if(u9=='T'){
+			  document.write("<p>"+"Estaba bien esta respuesta 10"+"<p>");
+			  }else{
+			document.write("respuesta 10:"+u9+"<p>");
+			  }
+			 var u10= window.localStorage.getItem('r11');
+			document.write("Tu puntaje fue de:"+u10+"<p>");
+			
+			
+			
+        </script>
+</pre>
+    
+    <a class="texto12" href="proyect1html.html">Volver a pagina de inicio</a>
+  </div>
+</div>
+<footer>@Fernandez Villarroel Percy Rodrigo®</footer>
+</body>
+</html>
+    

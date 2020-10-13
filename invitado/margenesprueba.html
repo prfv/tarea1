@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: auto; 
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.column2 {
+  float: right;
+  width: 80%;
+  padding: 10px;
+  height: auto;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/asdasda222.jpg);
+	background-size:cover;
+	
+}
+.principal{
+	float:right;
+	list-style:none;
+	margin-top:30px;
+		
+}
+.principal li{
+	display:inline-block;
+	
+}
+.principal li a menu1 li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+.principal li a menu1 li a:hover{
+	border:2px solid white;
+	}
+	
+.principal li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+
+.principal li a:hover{
+	border:2px solid white;
+}
+	
+.menu1{
+	position:relative;
+	display:inline-block;
+}
+
+.contenido{
+	display:none;
+	position:absolute;
+	background-color:#f9f9f9;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0,2);
+	z-index:1;
+}
+.contenido a{
+	color:#000;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.menu1:hover .contenido{
+	display:block;
+}
+.contenido a:hover{
+	background-color:#f1f1f1;
+}
+.biblioteca{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/asdasda222.jpg);
+	height:10vh;
+	background-size:auto;
+	background-position:center;
+}
+pre{
+	font-size:16px;
+	}
+	
+	
+	
+</style>
+</head>
+<body>
+
+		<header class="biblioteca">
+	<ul class="principal">
+   		<li><a href="../login1.html">Login</a></li>
+   		<li><a href="../acercadelcreador.html">Ayuda</a></li>
+        <div class="menu1">
+        <li><a href="">Menu</a></li>
+        <div class="contenido">
+        <a href="biblio1.html">Biblioteca</a>
+        <a href="descargas.html">Ejemplos</a>
+        </div>
+        </div>
+      
+   		</ul>
+ 
+		</header>
+
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+   
+       <h2><a href="selectores.html">CSS selectores</a></h2>
+           <h2><a href="fondos1.html">CSS fondos</a></h2>
+           <h2><a href="margenes.html">CSS margenes</a></h2>
+  
+             
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    
+  
+<pre>
+Márgenes CSS
+Las propiedades de margen CSS se usan para crear espacio alrededor de elementos, fuera de cualquier borde definido.
+
+Con CSS, tienes control total sobre los márgenes. Hay propiedades para establecer el margen para cada lado de un elemento (arriba, derecha, abajo e izquierda).
+Margen: lados individuales
+CSS tiene propiedades para especificar el margen para cada lado de un elemento:
+
+margen superior
+margen derecho
+margen inferior
+margen izquierdo
+Todas las propiedades de margen pueden tener los siguientes valores:
+
+auto: el navegador calcula el margen
+longitud: especifica un margen en px, pt, cm, etc.
+%: especifica un margen en% del ancho del elemento contenedor
+heredar: especifica que el margen debe heredarse del elemento padre
+Consejo: se permiten valores negativos.
+Ejemplo
+Establezca diferentes márgenes para los cuatro lados de un elemento < p >:
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+< / style >
+< / head >
+< body >
+
+< h2 >Estamos usando propiedades de margenes individuales < / h2 >
+
+< div >Esta division contiene margen: superior de 100px(pixeles),inferior de 100px, derecho de 150 e izquierdo de 80px < / div >
+
+< / body >
+< / html >
+
+</pre>
+<a href="../prubas/margenes1.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+<pre>
+Margen - Propiedad abreviada
+Para acortar el código, es posible especificar todas las propiedades de margen en una propiedad.
+
+La propiedad de margen es una propiedad abreviada de las siguientes propiedades de margen individuales:
+*margin-top
+*margin-right
+*margin-bottom
+*margin-left
+Pues así es como funciona:
+
+Si la propiedad margen tiene cuatro valores:
+
+margen: 25px 50px 75px 100px;
+margen superior es 25px
+margen derecho es 50px
+margen inferior es 75px
+margen izquierdo es 100px
+Ejemplo
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+div {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+< / style >
+< / head >
+< body >
+
+< h2 >La propiedad acortada para poner los cuatro margenes  < / h2 >
+
+< div >Esta division tendra un margen:superior de 25px, derecho de 50px inferior de 75, izquierdo de 100px< / div >
+
+< hr >
+
+< / body >
+< / html >
+</pre>
+<a href="../prubas/margenes2.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+<pre>
+
+245/5000
+El valor automático
+Puede establecer la propiedad de margen en automático para centrar horizontalmente el elemento dentro de su contenedor.
+
+El elemento ocupará entonces el ancho especificado y el espacio restante se dividirá en partes iguales entre los márgenes izquierdo y derecho.
+Ejemplo:
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+div {
+  width:300px;
+  margin: auto;
+  border: 1px solid red;
+}
+< / style >
+< / head >
+< body >
+
+< h2 >Usando margin:auto< / h2 >
+< p >
+Puede establecer la propiedad de margen en automático para centrar horizontalmente el elemento dentro de su contenedor. El elemento ocupará el ancho especificado y el espacio restante se dividirá en partes iguales entre los márgenes izquierdo y derecho:< / p >
+
+< div >
+Esta division automaticamente se centrara horizontalmente ya que contiene margin:auto
+< / div >
+
+< / body >
+< / html >
+</pre>
+<a href="../prubas/margenes3.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+</div>
+        </aside>
+      
+</body>
+</html> 

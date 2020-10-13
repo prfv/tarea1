@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+p {
+  direction: ltr;//Esto es un párrafo con dirección de izquierda a derecha.
+}
+p {
+  direction: rtl;//Esto es un párrafo con dirección de derecha a izquierda.
+}
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;//Esto es un párrafo con dirección de derecha a izquierda.
+}
+table {//uando se aplica a una tabla, la propiedad direction establece el orden de las columnas de la tabla.
+  border: black 1px solid;
+  direction: ltr;
+}
+td {
+  border: black 1px solid;
+  a{
+	color:blue;
+	}
+	
+}
+*/
+p {
+  direction: ltr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

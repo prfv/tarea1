@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.column2 {
+  float: right;
+  width: 80%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/asdasda222.jpg);
+	background-size:cover;
+	
+}
+ 
+.principal{
+	float:right;
+	list-style:none;
+	margin-top:30px;
+		
+}
+.principal li{
+	display:inline-block;
+	
+}
+.principal li a menu1 li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+.principal li a menu1 li a:hover{
+	border:2px solid white;
+	}
+	
+.principal li a{
+	color:#FFF;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+
+.principal li a:hover{
+	border:2px solid white;
+}
+	
+.menu1{
+	position:relative;
+	display:inline-block;
+}
+
+.contenido{
+	display:none;
+	position:absolute;
+	background-color:#f9f9f9;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0,2);
+	z-index:1;
+}
+.contenido a{
+	color:#000;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.menu1:hover .contenido{
+	display:block;
+}
+.contenido a:hover{
+	background-color:#f1f1f1;
+}
+.biblioteca{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(imagenes/cssssss.jpg);
+	height:10vh;
+	background-size:auto;
+	background-position:center;
+}
+pre{
+	font-size:16px;
+	}
+	
+	
+</style>
+</head>
+<body>
+
+		<header class="biblioteca">
+	<ul class="principal">
+   		<li><a href="proyect1html.html">Inicio</a></li>
+   		
+   		<li><a href="acercadelcreador.html">Ayuda</a></li>
+        <div class="menu1">
+        <li><a href="">Menu</a></li>
+        <div class="contenido">
+        <a href="tutorial.html">Tutorial</a>
+        <a href="Biblioteca.html">Biblioteca</a>
+        <a href="">Ejemplos</a>
+        </div>
+        </div>
+      
+   		</ul>
+ 
+		</header>
+
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+   
+       <h2><a href="selectores.html">CSS selectores</a></h2>
+           <h2>CSS colores</h2>
+           <h2><a href="fondos1.html">CSS fondos</a></h2>
+           <h2><a href="margenes.html">CSS margenes</a></h2>
+           <h2><a href="csstexto.html">CSS texto</a></h2>
+           <h2><a href="fuente.html">CSS fuente para letras</a></h2>
+           <h2><a href="iconos.html">CSS iconos</a></h2>
+           <h2><a href="menus.html">CSS menus</a></h2>
+           <h2><a href="bordes.html">CSS bordes</a></h2>
+           <h2><a href="posicionamiento.html">CSS posicionamiento</a></h2>
+             
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    
+    <pre>
+La posición Propiedad
+La propiedad de posición especifica el tipo de método de posicionamiento utilizado para un elemento.
+
+Hay cinco valores de posición diferentes:
+*static
+*relative
+*fixed
+*absolute
+*sticky
+Los elementos se posicionan utilizando las propiedades superior, inferior, izquierda y derecha. Sin embargo, estas propiedades no funcionarán a menos que la propiedad de posición se establezca primero. También funcionan de manera diferente según el valor de la posición.
+position: static;
+Los elementos HTML se colocan estáticos por defecto.
+
+Los elementos posicionados estáticos no se ven afectados por las propiedades superior, inferior, izquierda y derecha.
+
+Un elemento con posición: estático; no está posicionado de ninguna manera especial; siempre se posiciona de acuerdo con el flujo normal de la página:
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+< /style >
+< /head >
+< body >
+
+< h2 >position: static;< / h2 >
+
+< p >Un elemento con pposition: static; no está posicionado de ninguna manera especial; es
+siempre posicionado de acuerdo con el flujo normal de la página:< / p >
+
+< div class="static" >
+  Esta division tiene posicion estatica position: static;
+< / div >
+
+< / body >
+< / html >
+
+</pre>
+<a href="prubas/posicionamiento.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+<pre>
+position: relative;
+
+Un elemento con position: relative; se posiciona en relación con su posición normal.
+
+Establecer las propiedades superior, derecha, inferior e izquierda de un elemento relativamente posicionado hará que se ajuste fuera de su posición normal. Otro contenido no se ajustará para adaptarse a cualquier espacio dejado por el elemento.
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+< / style >
+< / head >
+< body >
+
+< h2 >position: relative;< / h2 >
+
+< p >Un elemento con position: relative; esta posicionado en su lugar normal< / p >
+
+< div class="relative" >
+Esta division tiene position: relative;
+< / div >
+< / body >
+< / html >
+</pre>
+<a href="prubas/posicionamiento1.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+<pre>
+position: fixed;
+
+Un elemento con posición: fijo; se posiciona en relación con la ventana gráfica, lo que significa que siempre permanece en el mismo lugar, incluso si se desplaza la página. Las propiedades superior, derecha, inferior e izquierda se utilizan para colocar el elemento.
+
+Un elemento fijo no deja un espacio en la página donde normalmente se habría ubicado.
+
+Observe el elemento fijo en la esquina inferior derecha de la página. Aquí está el CSS que se utiliza:
+< !DOCTYPE html >
+< html >
+< head >
+< style >
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+< / style >
+< / head >
+< body >
+
+< h2 >position: fixed;< / h2 >
+
+< p >Un elemento con position: fixed; esta posicionado de manera relativa en la ventana, lo que significa que siempre se quedara en el mismo lugar no importa si bajamos la pagina< / p >
+
+< div class="fixed" >
+Este elemento tiene position: fixed;
+< / div >
+
+< / body >
+< / html >
+
+</pre>
+<a href="prubas/posicionamiento2.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+<pre>
+position: absolute;
+Un elemento con posición: absoluto; se posiciona en relación con el ancestro posicionado más cercano (en lugar de posicionado en relación con la ventana gráfica, como fijo).
+
+Sin embargo; Si un elemento posicionado absoluto no tiene ancestros posicionados, utiliza el cuerpo del documento y se mueve junto con el desplazamiento de la página.
+
+Nota: Un elemento "posicionado" es aquel cuya posición es cualquier cosa menos estática.
+
+Aquí hay un ejemplo simple:
+< html >
+< head >
+< style >
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+< / style >
+< / head >
+< body >
+
+< h2 >position: absolute;< / h2 >
+
+< p >Un elemento con position: absolute; esta posicionado cerca de su mas cercana posicion (en lugar de posicionarse en relación con la ventana gráfica, como fixed):< / p >
+
+< div class="relative" >Este elemento tiene position: relative;
+  < div class="absolute" >Este elemento tiene position: absolute;< / div >
+< / div >
+
+< / body > 
+< / html >
+</pre>
+<a href="prubas/posicionamiento3.html" target="_blank" onclick="window.open(this.href,this.target,'width=300,height=400');return false;"><figcaption>prueba</figcaption></a>
+    <a class="texto12" href="bordes.html">Volver</a>
+  </div>
+</div>
+<footer>@Fernandez Villarroel Percy Rodrigo®</footer>
+</body>
+</html>

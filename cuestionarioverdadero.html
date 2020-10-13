@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns>
+<head>
+<meta name="keywords" content="pagina,7,siete"/>
+<meta name="description" content="pagina 7">
+<style>
+body{
+	background-image:url(../sep10/asdasda222.jpg);
+	background-size:cover;
+}
+
+a{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:24px;
+	margin:45px;
+	padding:25px;
+	
+
+}
+form{
+	margin:35px;
+	padding:25px;
+	
+	color:#FFF;
+}
+table{
+	width:850px;
+}
+
+p{
+	font-size:36px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:35px;
+	padding:25px;
+	border:5px #000 solid;
+	text-align:center;
+		
+
+}
+
+
+
+</style>
+<script>
+window.addEventListener("load",t1,false);
+var contador=0;
+function t1(){
+
+var r1=document.getElementById("e1").value;
+var r2=document.getElementById("e2").value;
+var r3=document.getElementById("e3").value;
+var r4=document.getElementById("e4").value;
+var r5=document.getElementById("e5").checked;
+var r6=document.getElementById("e6").checked;
+var r7=document.getElementById("e7").value;
+var r8=document.getElementById("e8").value;
+var r9=document.getElementById("e9").value;
+var r10=document.getElementById("e10").value;
+if(r1=="ID es especifico y class es general")
+{
+	alert("bien");
+	contador++;
+}
+if(r2=="mozilla")
+{
+	contador++;
+}
+
+if(r3=="tamaño-letra")
+{
+	contador++;
+}
+if(r4=="padding sangria y margin margen externo")
+{
+	contador++;
+}
+if(r5==true)
+{
+	contador++;
+}
+if(r6==true)
+{
+	contador++;
+}
+if(r7=="texto alinear")
+{
+	contador++;
+}
+if(r8=="imagen-total")
+{
+	contador++;
+}
+if(r9=="link")
+{
+	contador++;
+}
+if(r10=="link")
+{
+	contador++;
+}
+alert(contador);
+contador=0;
+}
+
+
+</script>
+</head>
+
+<body>
+<form name="form2" method="post" action="">
+<p>Cuestionario de CSS</p>
+<a>1. Diferencia entre id y class</a>
+
+  <table width="200" border="1">
+    <tr>
+      <td><div align="center">
+        <label for="textfield"></label>
+        <input type="text" name="e1" id="e1" size="100">
+      
+    </tr>
+  </table>
+  
+
+<a>2. Que significa moz</a>
+
+  <table width="200" border="1">
+    <tr>
+      <td><div align="center">
+        <label for="textfield"></label>
+        <input pattern="[A-Z,a-z]*" name="e2" id="e2" size="100">
+     
+    </tr>
+    
+  </table>
+
+<a>3. Cual de las siguientes propiedades hace referencia a la clase de letra</a>
+
+  <table width="50" border="1">
+    <tr>
+      <td><div align="center">
+        <label for="textfield"></label>
+        <label for="select"></label>
+        <select name="select" id="e3">
+          <option value="tamaño">Size</option>
+          <option value="tamaño-letra">Font-size</option>
+          <option value="tamaño">Char-size</option>
+          <option value="tamaño">letter-size</option>
+          <option value="tamaño">size-font</option>
+        </select>
+      </div>        
+     </td>
+    </tr>
+  
+  </table>
+
+<a>4. Cual es la diferencia entre padding y margin</a>
+
+ <table width="200" border="1">
+    <tr>
+      <td><div align="center">
+        <label for="textfield"></label>
+        <input type="text" name="e4" id="e4" size="100">
+      </div>      </td>
+    </tr>
+  </table>
+
+<a>5. Cual de las siguientes propiedades te permite colocar bordes</a>
+
+  <table width="200" border="1">
+    <tr>
+      <td width="176"><input type="radio" name="e5" id="e5" value="radio"></td>
+      <td width="658"><div align="center"><a>La propiedad border</a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">
+        <input type="radio" name="radio" id="radio2" value="radio">
+      </div></td>
+      <td><div align="center"><a>La propiedad padding</a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">
+        <input type="radio" name="radio" id="radio3" value="radio">
+      </div></td>
+      <td><div align="center"><a>La propiedad margin</a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">
+        <input type="radio" name="radio" id="radio4" value="radio">
+      </div></td>
+      <td><div align="center"><a>La propiedad border-top</a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">
+        <input type="radio" name="radio" id="radio5" value="radio">
+      </div></td>
+      <td><div align="center"><a>La propiedad border-botton</a></div></td>
+    </tr>
+  </table>
+  
+<a>6. Cual de las siguientes propiedades te permite volver los bordes redondos</a>
+
+  <table width="200" border="1">
+    <tr>
+      <td width="176"><div align="center">
+        <input type="radio" name="radio" id="e6" value="e6">
+        <label for="radio"></label>
+      </div></td>
+      <td width="658"><div align="center"><a>La propiedad rounded</a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">
+        <input type="radio" name="radio" id="radio2" value="radio">
+      </div></td>
+      <td><div align="center"><a>La propiedad round</a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">
+        <input type="radio" name="radio" id="radio3" value="radio">
+      </div></td>
+      <td><div align="center"><a>La propiedad circle</a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">
+        <input type="radio" name="radio" id="radio4" value="radio">
+      </div></td>
+      <td><div align="center"><a>La propiedad circled</a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">
+        <input type="radio" name="radio" id="radio5" value="radio">
+      </div></td>
+      <td><div align="center"><a>La propiedad circle-round</a></div></td>
+    </tr>
+  </table>
+ 
+
+<a>7. Cual de las siguientes propiedades permite poner en el centro el texto</a>
+
+  <table width="200" border="1">
+    <tr>
+      <td><div align="center">
+        <label for="textfield"></label>
+        <label for="select"></label>
+        <select name="select" id="e7">
+          <option value="texto alinear">text-align:center</option>
+          <option value="texto">text-align:right</option>
+          <option value="texto">alignment:middle</option>
+          <option value="texto">alignment:center</option>
+          <option value="texto">text:center</option>
+        </select>
+      </div>        
+      </td>
+    </tr>
+  </table>
+
+
+<a>8. Cual de las siguientes propiedades permite que la imagen de fondo cubra toda la pantalla</a>
+
+  <table width="200" border="1">
+    <tr>
+      <td><div align="center">
+        <label for="textfield"></label>
+        <label for="select"></label>
+        <select name="select" id="e8">
+          <option value="imagen">background:center</option>
+          <option value="imagen-total">background-size:cover</option>
+          <option value="imagen">background-size:center</option>
+          <option value="imagen">image:auto</option>
+          <option value="imagen">bacground-image:cover</option>
+        </select>
+      </div>        
+      </td>
+    </tr>
+  </table>
+
+<a>9. Que significa SRC</a>
+
+ <table width="200" border="1">
+    <tr>
+      <td><div align="center">
+        <label for="textfield"></label>
+        <input pattern="[A-Z,a-z]*" name="e10" id="e10" size="100">
+      </div>        </td>
+    </tr>
+  </table>
+
+<a>10. Con que se declara la referencia de una hoja css en html</a>
+
+  <table width="200" border="1">
+    <tr>
+      <td><div align="center">
+        <label for="textfield"></label>
+        <input type="text"  name="e9" id="e9" size="100">
+      </div>        </td>
+    </tr>
+  </table>
+
+  <input type="submit" name="button" id="button" value="Enviar" onClick="t1()">
+</form>
+
+</body>
+</html>

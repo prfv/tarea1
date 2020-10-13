@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+form{
+	alignment-adjust:central;
+	margin-top:450px;
+	margin-left:600px;
+	size:auto;
+	font-size:36px;
+	font-style:italic;
+	
+}
+td{
+	border:#000 4px solid;
+	size:auto;
+
+}
+.textfield{
+	margin-bottom:15px;
+
+}
+
+
+body{
+	background-image:url(imagenes/asdasda222.jpg);
+	background-size:cover;
+	
+}
+ 
+	
+</style>
+
+<script>
+var attempt = 3; .
+
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "usuario" && password == "usuario"){
+alert ("Login successfully");
+window.location = "proyect1html.html";
+return false;
+}
+else{
+attempt --;
+alert("You have left "+attempt+" attempt;");
+
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+</script>
+</head>
+<body>
+<body>
+<div class="container">
+<div class="main">
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+<h4>Si no tiene cuenta</h4>
+<h4><a href="registroprueba.html">Registrese</a></h4>
+<h5>Pruebe como <a href="invitado/biblio1.html">invitado</a></h5>
+
+</form>
+</div>
+</div>
+<footer>@Fernandez Villarroel Percy Rodrigo®</footer>
+</body>
+</html>
